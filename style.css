@@ -117,6 +117,7 @@ a:hover {
     transform: translateX(18px);
     background-color: var(--color-white);
 }
+
 .toggle-switch .slider {
     position: absolute;
     cursor: pointer;
@@ -175,30 +176,57 @@ header .container {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
 }
 
 footer {
     font-size: 14px;
     color: var(--color-grey-600);
     padding-top: 1rem;
-    padding-bottom: 1rem;   
+    padding-bottom: 1rem;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.credit {
+    display: none;
+}
+
+
+#brands {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
     .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+       } 
+
+
+    .brand-box {
+        border: 1px solid var(--color-grey-300);
+        border-radius: 8px;
+        height: 100px;
+        width: 196px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4px;
-
-    }
-    .credit {
-        display: none;
     }
 
-@media (min-width:768px) {
+}
 
-    .container{
-       max-width: 720px;
+@media (min-width:760px) {
+
+    .container {
+        max-width: 720px;
     }
 
     .btn-toggle-switch .label {
@@ -208,39 +236,54 @@ footer {
     header .container {
         gap: 3rem;
     }
-    footer {
-     
-        .credit {
+
+    footer .credit {
             display: block;
         }
-
-     }
-    }
- @media (min-width:1400px) {
-
-    .container{
-         max-width: 1320px;
-        }
-
-   .btn-toggle-switch .label {
-        display: block;
-        }
-
-   header .container {
-        grid-template-columns: auto 1fr auto auto;
-        align-items: center;    
-        gap: 3rem;
-        }
-
-    .navbar {
+    
+    #brands {
         display: block;
     }
 
-    #signinup {
-        display: block;
-    }
-
-    .btn-mobile {
+    #brand-5, #brand-6 {
         display: none;
     }
-  }
+
+}
+
+
+
+@media (min-width:1400px) {
+
+        .container{
+             max-width: 1320px;
+            }
+    
+       .btn-toggle-switch .label {
+            display: block;
+            }
+    
+       header .container {
+            grid-template-columns: auto 1fr auto auto;
+            align-items: center;    
+            gap: 3rem;
+            }
+    
+        .navbar {
+            display: block;
+        }
+    
+        #signinup {
+            display: block;
+        }
+    
+        .btn-mobile {
+            display: none;
+        }
+
+        #brand-5, #brand-6 {
+            display: flex;
+
+        }
+    
+}
