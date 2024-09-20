@@ -34,15 +34,12 @@ font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;
 font-size: 16px;
+
 }
 
 .wrapper {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-   
-
 
 }
 
@@ -384,7 +381,7 @@ footer {
                 } 
             }      
             
-            @media (min-width: :1400px) {
+            @media (min-width:1400px) {
                 text-align: left;
             } 
           }
@@ -478,10 +475,8 @@ footer {
 }
 
 #features {
-    margin-top: 1rem;
-    
-    
-    .container { 
+    margin-top: 1rem;    
+    .container {
         display: grid;
         align-items: center;
         justify-content: center;
@@ -565,8 +560,6 @@ footer {
                                         "regular top";
 
             }
-           
-            
 
             .easy {
                 display: grid;
@@ -684,5 +677,100 @@ footer {
         }
         
     }
+
+}
+
+/*#works {
+    background-color: var(--color-grey-100);
+    .container {
+        .headline {
+        font-size: 28px;
+        text-align: center;
+        text-weight: 800;
+        padding-top: 4rem;
+    }
+        .mobiles {
+            display: flex;
+            gap: 6rem;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        
+        .transfer-1 {
+            display: none;
+        }
+
+        .transfer-black {
+            position: relative;
+            right: -365px;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+
+       .transfer-shell {
+            
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+
+        .transfer-container {
+            position: relative;
+            right: 365px;
+            
+            
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+
+        .transfer-1 {
+            display: none;
+
+            @media (min-width:768px) {
+            display: block;
+            }
+        }
+
+        .budget {
+            display: none;
+
+            @media (min-width:768px) {
+            display: block;
+            }
+        }
+
+        .cards {
+            display: none;
+            
+            @media (min-width:768px) {
+            display: block;
+            }
+        }
+
+    }
+
+    .content {
+        text-align: center;
+        padding-bottom: 4rem;
+
+        h2 {
+            font-size: 22px;
+            text-weight: 800;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            font-size: 16px;
+            color: #585C7B;
+        }
+    }
+
+
+  }
+    
 
 }
