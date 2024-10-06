@@ -1,0 +1,47 @@
+@mixin buttons-colors ($bg-color, $text-color, $hover-bg-color, $hover-text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none !important;
+
+   &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+   }
+
+   &:hover, &:focus, &:active {
+    outline: none !important;
+   }
+}
+
+.btn {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-grey-800;
+    }
+}
+
+
+.btn-circle {
+    border: solid $color-grey-200;
+    background-color: white;
+    color: $color-grey-900;
+    
+    &:hover {
+    background-color: $color-grey-600;
+    color: white; 
+    }  
+}
+
+.btn-download-app { 
+    background-color: $color-grey-900;
+    color: $color-white;
+    
+    &:hover {
+    background-color: $color-grey-600;
+    color: $color-primary;
+    }
+}

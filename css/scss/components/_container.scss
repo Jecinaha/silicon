@@ -1,0 +1,17 @@
+.container {
+    //@include spacing();
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include desktop {
+        max-width: 1320px;
+    }
+}

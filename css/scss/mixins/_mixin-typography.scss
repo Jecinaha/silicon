@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "../colors/theme";
+
+@mixin text {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $color-grey-700;
+}
+
+@mixin heading {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+    color: $color-grey-900;
+}
+
+@mixin text-size ($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin text-colors ($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none !important;
+}
+
+@mixin text-hover-colors($hover-bg-color, $hover-text-color) {
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+    }
+
+    &:hover, &:focus, &:active {
+        outline: none !important;
+    }
+}
